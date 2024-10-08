@@ -9,44 +9,60 @@
 <body>
     <div id="main">
         
-        
         <nav>
             <a href="./index.html">Home</a><a href="#">Archive</a>
         </nav>
 
+        <section id="cont">
 
-        <section id="status">
-        
-            <select id="prior">
-                <option>Select Priority</option>
-                <option value="low">Low</option>
-                <option value="md">Medium</option>
-                <option value="hg">High</option>
-            </select>
+            <div>
+
+                <select class="item item1">
+                    <option>Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="md">Medium</option>
+                    <option value="hg">High</option>
+                </select>
+    
+    
+                <select class="item item2">
+                    <option>Select Status</option>
+                    <option value="pen">Pending🔃</option>
+                    <option value="com">Completed✅</option>
+                </select>
 
 
-            <select id="pcs">
-                <option>Select Status</option>
-                <option value="pen">Pending🔃</option>
-                <option value="com">Completed✅</option>
-            </select>
-
-
+            </div>
             
+            <div>
+
+                <table>
+                    <tr>
+                     <th>Name</th>
+                     <th>Priority</th>
+                     <th>Status</th>
+                     <th>Delete</th>
+                    </tr>
+                    <tbody id="data"></tbody>
+                 </table>
+
+            </div>
+           
+
+
         </section>
 
-        <section id="status">
-            <table>
-               <tr>
-                <th>Name</th>
-                <th>Priority</th>
-                <th>Status</th>
-                <th>Delete</th>
-               </tr>
-               <tr></tr>
-            </table>
-        </section>
     </div>
     <script src="./scripts/archive.js"></script>
 </body>
 </html>
+            
+        
+
+
+
+
+        
+        
+            
+        
