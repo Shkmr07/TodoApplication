@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(36, 126, 126);
+    margin-bottom: 50px;
+}
+
+nav > a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+
+}
+
+nav > a:hover{text-decoration: underline;}
+
+#cont{ display: flex; gap: 50px; justify-content: space-evenly;}
+
+#cont > div:first-child{ padding: 100px;  display: flex; flex-wrap: wrap; gap: 20px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+#inp,#opt{padding: 8px; font-size: 16px; border-radius: 5px;}
+
+#inp{flex: 2; text-align: left;}
+#opt{flex: 1;font-weight: 600;}
+
+#btn{flex-basis: 100%;padding: 10px; font-size: 16px;border-radius: 5px; font-weight: bold; background-color: rgb(52, 181, 52); color: white;}
+#btn:hover{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+
+#cont > div:last-child > table{border-collapse: collapse;}
+#cont > div:last-child > table > tr,th,td{padding: 10px; border: 1px solid black;}
+#cont > div:last-child > table th{background-color: rgb(81, 179, 81); color: white;}
