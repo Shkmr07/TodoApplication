@@ -23,7 +23,7 @@ function createTd({name,prior,st,dl}){
     let status = createEL('td')
     let deleted = createEL('td')
     let tr = createEL('tr')
-    
+    pr.style.backgroundColor = (prior==='High')?'red':(prior==='Medium')?'yellow':'white'
     nm.textContent = name
     pr.textContent = prior
     status.textContent =  st?'Completed✅':'Pending🔃'

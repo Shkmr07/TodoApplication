@@ -26,7 +26,7 @@ nav > a:hover{text-decoration: underline;}
 
 #cont{ display: flex; gap: 50px; justify-content: space-evenly; flex-wrap: wrap;}
 
-#cont > div:first-child{ padding: clamp(50px,5vw,100px);  display: flex; flex-wrap: wrap; gap: 20px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+#cont > div:first-child{height: 100px; padding: clamp(50px,5vw,100px);  display: flex; flex-wrap: wrap; gap: 20px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 
 #inp,#opt{padding: 8px; font-size: 16px; border-radius: 5px;}
 
@@ -40,3 +40,5 @@ nav > a:hover{text-decoration: underline;}
 #cont > div:last-child > table{border-collapse: collapse;}
 #cont > div:last-child > table  tr,th,td{padding: 10px; border: 1px solid black;}
 #cont > div:last-child > table th{background-color: rgb(81, 179, 81); color: white;}
+
+#cont > div:last-child > table button{padding: 2px; border-radius: 5px;}
