@@ -17,18 +17,18 @@
 
             <div>
 
-                <select class="item item1">
-                    <option>Select Priority</option>
-                    <option value="low">Low</option>
-                    <option value="md">Medium</option>
-                    <option value="hg">High</option>
+                <select id="filterbyPrior">
+                    <option value="all">Select Priority</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
                 </select>
     
     
-                <select class="item item2">
-                    <option>Select Status</option>
-                    <option value="pen">Pending🔃</option>
-                    <option value="com">Completed✅</option>
+                <select id="filterbyStatus">
+                    <option value="all">Select Status</option>
+                    <option value="false">Pending🔃</option>
+                    <option value="true">Completed✅</option>
                 </select>
 
 
@@ -41,6 +41,7 @@
                      <th>Name</th>
                      <th>Priority</th>
                      <th>Status</th>
+                     <th>Restore</th>
                      <th>Delete</th>
                     </tr>
                     <tbody id="data"></tbody>

@@ -5,7 +5,7 @@ document.getElementById('btn').addEventListener('click',(e)=>{
     let inp = document.getElementById('inp')
     let opt = document.getElementById('opt')
 
-    if(!inp.value) alert('Input field required')
+    if(!inp.value) alert('Todo Cannot Be Empty!')
 
     else{
         
@@ -18,7 +18,7 @@ document.getElementById('btn').addEventListener('click',(e)=>{
         
         inp.value = ''
         tbody.innerHTML = ''
-        fetchUsers('todo')
+        fetchUsers()
     }
 
     
@@ -26,7 +26,7 @@ document.getElementById('btn').addEventListener('click',(e)=>{
 
 
 
-function fetchUsers(items){
+function fetchUsers(){
 
     try{
         let getItem = JSON.parse(localStorage.getItem('todo'))
@@ -42,7 +42,7 @@ function fetchUsers(items){
 }
     
 
-fetchUsers('todo')
+fetchUsers()
 
 
 function ce(val){
